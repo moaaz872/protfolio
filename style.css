@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.img-box{
+    height: 50px;
+    width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  /* لمنع الانكماش */
+  flex-shrink: 0;
+
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.meun{
+    background: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    transition: .5s;
+    overflow: hidden;
+}
+.meun:hover{
+    width: 260px;
+}
+
+ul{
+    list-style: none;
+    height: 95%;
+    /* علشان هيحرك بالنسبه لاب بتاعه */
+    position: relative;
+}
+ul li a{
+    display: block;
+    /* علشان a عنصر inline */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* علشان اعمل تباعد بين العنار استخدم gab */
+    gap: 40px; ;
+    /* لعمل تاخير  */
+    transition: .6s;
+}
+ul li a:hover, .active, .data-info .box:hover, td:hover{
+    background:#ffffff55 ;
+
+}
+.log{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+.log a{
+    background-color: #a00;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+   width: 100%;
+   margin: 5px;
+}
+.title-info{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(11, 121, 231);
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.data-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    height: 150px;
+    background: #123;
+    /* بتعمل نفس تاثير العرض بس بشكل احسن */
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data{
+    align-items: center;
+}
+.data-info .box span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    /* خصيه لعمل المسفات في الجدول */
+    border-spacing: 8px;
+}
+td,th{
+    background: #123;
+    border-radius: 8px;
+    height: 40px;
+    padding: 10px;
+}
+th{
+    background-color: rgb(0, 128, 255);
+}
+.price{
+    background: green;
+}
+.count{
+    background: gold;
+    color: #001;
+}
+.price,.count{
+    padding: 6px;
+    border-radius: 8px;
+}
